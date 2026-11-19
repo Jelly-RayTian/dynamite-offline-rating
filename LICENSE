@@ -1,0 +1,49 @@
+Dynamite Offline Rating - Source-Available License, version 1.0
+
+Copyright (c) 2026 Jelly-RayTian. All rights reserved, except as expressly granted below.
+
+1. WHAT THIS COVERS
+   "Software" means the source code, tests, scripts and documentation in this repository that were written by the
+   copyright holder (the "Licensor"). It does NOT include (a) the third-party materials listed in THIRD_PARTY_NOTICES.md,
+   which stay under their own owners' terms, or (b) the game Dynamite or any file taken from it (see section 5).
+
+2. WHAT YOU MAY DO
+   Free of charge, for personal and non-commercial purposes, you may:
+   (a) read, study, build and run the Software;
+   (b) modify the Software for your own use;
+   (c) share unmodified copies of the Software's source code with other people, non-commercially, provided you keep this
+       license file and all copyright and attribution notices.
+
+3. CONDITIONS
+   - Keep all copyright, license and attribution notices.
+   - If you share a modified version, mark it clearly as modified and do not suggest that the Licensor endorses it.
+   - You may not sublicense the Software.
+
+4. WHAT YOU MAY NOT DO WITHOUT THE LICENSOR'S WRITTEN PERMISSION
+   - Use the Software commercially (selling it, bundling it into a paid product or service, or charging for access to it).
+   - Remove notices, or present the Software as your own work.
+   - Use the Software to cheat in, interfere with, or submit data to any online service, leaderboard, ranking or other
+     players. The Software is designed for offline, local, personal use only.
+
+5. THE GAME
+   The Software works by modifying a copy of the game Dynamite that YOU supply. Dynamite, including its program code, charts,
+   music and artwork, belongs to its respective owners (for example Tuner Games). This license grants you no rights in any of
+   it. Any release asset in this repository that contains game files is a personal backup for the Licensor only and may not
+   be copied, redistributed or published by anyone.
+   The Licensor is not affiliated with, endorsed by, or sponsored by the owners of Dynamite.
+
+6. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+   WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE LICENSOR BE
+   LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+   OR IN CONNECTION WITH THE SOFTWARE OR ITS USE. You use it, and modify any game files, at your own risk.
+
+7. TERMINATION
+   Your rights under this license end automatically if you violate it.
+
+----------------------------------------------------------------------------------------------------
+中文摘要（仅供参考，以英文条款为准）
+版权归 Jelly-RayTian 所有。你可以为个人、非商业目的阅读、编译、运行、修改本项目的源码，也可以非商业地分享原样的源码副本
+（须保留许可证和署名）。禁止商业使用、禁止去掉署名、禁止用它去作弊或干扰任何在线服务/排行榜。
+本项目只修改"你自己提供的"游戏副本；游戏本身及其代码、谱面、音乐、美术归原权利人，本许可证不授予任何相关权利。
+仓库发布附件里如果含有游戏文件，仅是作者个人备份，任何人不得复制或再分发。无任何担保，风险自负。
