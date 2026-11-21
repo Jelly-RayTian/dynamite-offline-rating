@@ -11,6 +11,14 @@ uploaded anywhere.
 |---|---|
 | ![Best 20 page](docs/preview_board_small_sample.png) | ![Account settings](docs/preview_account_sheet_sample.png) |
 
+## 下载与安装 · Download and install
+
+**[下载 iOS IPA · Download iOS IPA](https://github.com/Jelly-RayTian/dynamite-offline-rating/releases/download/v1.0.0/Dynamite-1.0.2-OfflineRating-unsigned.ipa)** · [v1.0.0 Release](https://github.com/Jelly-RayTian/dynamite-offline-rating/releases/tag/v1.0.0) · [OfflineRating.dylib](https://github.com/Jelly-RayTian/dynamite-offline-rating/releases/download/v1.0.0/OfflineRating.dylib)
+
+IPA 基于 Dynamite 1.0.2（build 59），已内置 Offline Rating。下载的是未签名版，可用 Sideloadly 或 AltStore 重新签名并安装。安装后，在「文件」App 中将谱面文件放进 Dynamite 的 `Documents`，并按导入教程添加或合并 `__rena_index_2`。已有谱面时，先备份索引。[谱面导入教程](https://github.com/EDTA-gif/dynamite-charts-repository/blob/main/Custom_Import_Tutorial.md)
+
+The unsigned IPA includes Offline Rating for Dynamite 1.0.2 (build 59). Re-sign and install it with Sideloadly or AltStore. Copy your chart files into Dynamite’s `Documents` folder in the Files app and add or merge the `__rena_index_2` index. Back up any existing index before importing. [Chart import guide](https://github.com/EDTA-gif/dynamite-charts-repository/blob/main/Custom_Import_Tutorial_EN.md)
+
 ## ⚠ 关于定数表 · About the chart constants
 
 **中文：** `data/charts.csv` 里的谱面定数（D 值）**只包含官服关闭（2022 年 6 月）时社区已经测出来的那些**：397 张排位谱面，D 在 11.0 到 17.0 之间。
@@ -33,12 +41,12 @@ uploaded anywhere.
 ## 限制 · Requirements and limits
 
 - **只支持 Dynamite 1.0.2（build 59）**；补丁脚本会逐项校验二进制，不一致就拒绝修改。
-- 需要你**自备原版 IPA**（本仓库的源码不含游戏文件），并用你自己的 Apple 开发者身份重新签名。免费账号的签名 **7 天过期**，到期后需重签。
+- 安装 Release IPA 需要重新签名。使用免费 Apple 账号签名时，通常每 7 天需要续签。自行构建时需准备 Dynamite 1.0.2（build 59）的原版 IPA。
 - 在 iPad Pro / iOS 26.6.2 上验证过；其他设备和系统版本没有测试。
 - 谱面数据（`.rnx` 加密文件和 `__rena_index_2` 索引）需要你自己放进 App 的 `Documents`，本项目不提供。
 - 验证范围和没有验证的部分见 [docs/TECHNICAL_NOTES.md](docs/TECHNICAL_NOTES.md) 第 7 节。
 
-## 使用 · Build and install
+## 从源码构建 · Build from source
 
 ```bash
 # 1. build the module (Xcode command line tools, iOS SDK)
@@ -90,13 +98,8 @@ clang -arch arm64 -o /tmp/h native/tests/hook_test.c native/tests/hook_test.S na
 `native/tests/test_index.m` needs the path of a real `__rena_index_2` and expects it to contain *Quaint Echo*; it is not part of the routine run.
 `native/tests/ui_host/` renders the UI in the iOS Simulator with sample data (`build_ui_host.sh`).
 
-## Releases and the game files
-
-The Releases of this repository contain a **patched copy of the game** (an unsigned IPA) and the built `OfflineRating.dylib`. The IPA is a personal backup
-of the owner: **this repository must stay private**. Before ever making it public, delete every Release asset that contains game files
-(see section 5 of `LICENSE`). Dynamite and everything in it belong to their owners; this project is not affiliated with them.
-
 ## 致谢与许可 · Credits and license
 
 Chart data, the rating formula and the research sources come from the Dynamite community; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-Copyright (c) 2026 Jelly-RayTian. Source-available, personal and non-commercial use; see [LICENSE](LICENSE).
+Copyright (c) 2026 Jelly-RayTian. Source-available for personal, non-commercial use. See [LICENSE](LICENSE).
+Dynamite and its game assets belong to their respective owners. This project is unaffiliated with them.
